@@ -1,0 +1,19 @@
+{
+  "name": "tiendamovistar",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas web tiendamovistar\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dsite \u001b[2~tiendamovistar",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "author": "agzaracho",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agzaracho/Cypress-Test-Automation.git"
+  }
+  
+}
