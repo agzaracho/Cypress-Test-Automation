@@ -5,7 +5,7 @@ import filterPage from "../../support/pages/filterPage";
 import cardFinancingOptionsPage from "../../support/pages/cardFinancingOptionsPage";
 import checkOutPage from "../../support/pages/checkOutPage";
 
-describe('Connectis - Cypress cases', function(){
+describe('Connectis - Cypress Tienda Movistar', function(){
     Cypress.on('uncaught:exception', (err) => {
         return false;
       })
@@ -15,10 +15,10 @@ describe('Connectis - Cypress cases', function(){
             this.data=data ;
         })
         cy.visit('/');
-        //cy.screenshot();
+        cy.screenshot();
     }) 
     
-/*      it("CP001 - Validar cuotas en compra de equipo -Cuotas.12 -Equipo.A52",function(){
+      it("CP001 - Validar cuotas en compra de equipo -Cuotas.12 -Equipo.A52",function(){
         indexPage.search(this.data.modelToSearch);
         searchResultPage.verifySearch(this.data.modelToSearch);
         searchResultPage.goFirstMatch(this.data.modelToSearch);
@@ -43,7 +43,7 @@ describe('Connectis - Cypress cases', function(){
         cardFinancingOptionsPage.selectBank('Credicoop');   
         cardFinancingOptionsPage.selectCard('Visa');
         cardFinancingOptionsPage.verifyMaxAmountPays(60);
-        cy.screenshot('#modal-content-17');
+        cy.screenshot();
     })
     
     it('CP004 - Añadir producto al carrito de compras', function(){
@@ -51,18 +51,12 @@ describe('Connectis - Cypress cases', function(){
         productPage.addProdToCart();
         checkOutPage.verifyBanner(); 
         cy.screenshot()      
-    })*/
+    })
 
-        it('CP005 - Quitar Producto del carrito de compras', function(){
+    it('CP005 - Quitar Producto del carrito de compras', function(){
         indexPage.selectProduct(0)
         productPage.addProdToCart();
         checkOutPage.deleteProduct();
         cy.screenshot();
     })
-/*         it('CP006 - Quitar Producto del carrito de compras', function(){
-        cy.visit('https://tienda.movistar.com.ar')
-        indexPage.selectProduct(0)
-        productPage.addProdToCart();
-        checkOutPage.deleteProduct()
-    }) */
 })
