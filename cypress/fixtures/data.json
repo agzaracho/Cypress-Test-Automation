@@ -1,0 +1,8 @@
+{
+  "modelToSearch" : "A52",
+  "installments" : "12",
+  "filter" : "price",
+  "filterValue": "$100.000 - $200.000",
+  "filter2" : "movistar_internalmemory",
+  "filterValue2": "256GB"
+}
